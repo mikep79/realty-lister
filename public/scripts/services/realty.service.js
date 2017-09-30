@@ -1,5 +1,6 @@
 myApp.service('RealtyService', function($http){
     var self = this;
+    
     self.getRent = function(){
         $http({
             method: 'GET',

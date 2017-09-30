@@ -5,6 +5,7 @@
     - source in service file.
 - [x] Set up get req for rent data.
     - Test get req func from html view to server router - OK!
+- [x] Create links to navigate page in index.html.
 - [ ] Set up database connection/schema.
 
 - [ ] Repeat for sale data.
