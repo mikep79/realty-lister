@@ -1,0 +1,14 @@
+.row:nth-child(odd) {
+    background-color: #B9B8E4;
+    text-align: center;
+}
+
+.row:nth-child(even) {
+    background-color: #B69DB4;
+    text-align: center;
+}
+
+.color1 {
+    background-color: #4E4E53;
+    color: rgb(173, 202, 219);
+}
