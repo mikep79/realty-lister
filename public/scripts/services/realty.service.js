@@ -6,7 +6,7 @@ myApp.service('RealtyService', function($http){
             method: 'GET',
             url: '/getRent'
         }).then(function(res){
-            console.log('Service GET success. Res: ', res);
+            console.log('Service GET success. Res: ', res.data);
         });
     };  // end getRent funct
 });

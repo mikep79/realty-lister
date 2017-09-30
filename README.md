@@ -1,3 +1,5 @@
+- [x] NPM init. NPM install express, body-parser, mongoose. 
+
 - [x] Set up controllers, services, pages so pages are shaking hands.
     - Source all scripts.
     - Confirm controller/view handshake for home.
@@ -7,6 +9,8 @@
     - Test get req func from html view to server router - OK!
 - [x] Create links to navigate page in index.html.
 - [ ] Set up database connection/schema.
+     - Grab all data.
+     - Grab only rental data.
 
 - [ ] Repeat for sale data.
 
