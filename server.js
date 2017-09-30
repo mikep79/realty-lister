@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var index = require('./modules/routes/index');
 var rent = require('./modules/routes/rent');
+var sale = require('./modules/routes/sale');
 
 app.listen(3000, function(){
     console.log('Listening at port 3000');
@@ -17,3 +18,4 @@ app.use(bodyParser.json());
 
 app.use('/', index);
 app.use('/getRent', rent);
+app.use('/getSale', sale);

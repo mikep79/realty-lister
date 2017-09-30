@@ -1,3 +1,9 @@
 <section>
     <h2>For sale data</h2>
+    <button ng-click='SC.getSaleData()'>Get sale data</button>
+    <ol>
+        <li ng-repeat='eachSaleObj in SC.saleObj.sales'>
+            Cost: {{ eachSaleObj.cost}} - City: {{ eachSaleObj.city }} - Square Footage: {{ eachSaleObj.sqft}}
+        </li>
+    </ol>
 </section>

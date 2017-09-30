@@ -11,7 +11,7 @@
 - [x] Set up database connection/schema.
 - [x] Grab only rental data.
 - [x] Pass down to html via obj's and display.
-- [ ] Repeat for sale data.
+- [x] Repeat for sale data.
 
 
 # Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
