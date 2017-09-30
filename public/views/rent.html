@@ -1,4 +1,9 @@
 <section>
     <h2>For rent data</h2>
     <button ng-click='RC.getRentData()'>Get rent data</button>
+    <ol>
+        <li ng-repeat='eachRentalObj in RC.rentalObj.rentals'>
+            Rent: {{ eachRentalObj.rent}} - City: {{ eachRentalObj.city }} - Square Footage: {{ eachRentalObj.sqft}}
+        </li>
+    </ol>
 </section>

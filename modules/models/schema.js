@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var rentSchema = new Schema({
-    rent: Number,
+    // rent: Number,
     sqft: Number,
     city: String
 });

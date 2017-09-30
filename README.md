@@ -8,10 +8,9 @@
 - [x] Set up get req for rent data.
     - Test get req func from html view to server router - OK!
 - [x] Create links to navigate page in index.html.
-- [ ] Set up database connection/schema.
-     - Grab all data.
-     - Grab only rental data.
-
+- [x] Set up database connection/schema.
+- [x] Grab only rental data.
+- [x] Pass down to html via obj's and display.
 - [ ] Repeat for sale data.
 
 

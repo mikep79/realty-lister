@@ -3,7 +3,7 @@ var RentalProperties = require('../models/schema');
 
 router.get('/', function(req, res){
     // find() on RentalProperties
-    RentalProperties.find({}, function(err, propResult) {
+    RentalProperties.find({"rent": {$exists: true}}, function(err, propResult) {
         if (err){
             console.log('Rent get error: ', err);
             res.sendStatus(500);
