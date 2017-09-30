@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- source all script files -->
     <script src='vendors/angular.min.js'></script>
+    <script src='vendors/angular-route.min.js'></script>
     <script src='scripts/client.js'></script>
+    <script src="scripts/controllers/home-controller.js"></script>
+    <script src="scripts/controllers/rent-controller.js"></script>
+    <script src="scripts/controllers/sale-controller.js"></script>
+    <script src="scripts/services/realty.service.js"></script>
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
-    <title>          </title>
+    <title>Realty Listings</title>
 </head>
+
 <body ng-app='myApp'>
-    <h1>Test page</h1>
-    
+    <nav>
+        <h1>Index Page</h1>
+        <a>Home link //</a>
+        <a>For Rent link // </a>
+        <a>For Sale link</a>
+    </nav>
+    <ng-view></ng-view>
+
 </body>
+
 </html>
