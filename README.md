@@ -13,7 +13,7 @@
 - [x] Pass down to html via obj's and display.
 - [x] Repeat for sale data.
 
-- [ ] Styling with bootstrap.
+- [x] Styling with bootstrap.
 
 
 # Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My

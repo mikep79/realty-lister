@@ -1,9 +1,18 @@
 <section>
-    <h2>For sale data</h2>
-    <button ng-click='SC.getSaleData()'>Get sale data</button>
-    <ol>
-        <li ng-repeat='eachSaleObj in SC.saleObj.sales'>
-            Cost: {{ eachSaleObj.cost}} - City: {{ eachSaleObj.city }} - Square Footage: {{ eachSaleObj.sqft}}
-        </li>
-    </ol>
+    <div class="container">
+        <h2>Properties for Sale</h2>
+        <button class='btn' ng-click='SC.getSaleData()'>For Sale</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="color1 col-sm-4"><strong>- Purchase Price -</strong></div>
+            <div class="color1 col-sm-4"><strong>- City -</strong></div>
+            <div class="color1 col-sm-4"><strong>- Square Footage -</strong></div>
+        </div>
+        <div class="row" ng-repeat="eachSaleObj in SC.saleObj.sales">
+            <div class="col-sm-4">{{ eachSaleObj.cost }}</div>
+            <div class="col-sm-4">{{ eachSaleObj.city }}</div>
+            <div class="col-sm-4">{{ eachSaleObj.sqft }}</div>
+        </div>
+    </div>
 </section>

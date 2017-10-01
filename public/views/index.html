@@ -27,33 +27,24 @@
 </head>
 
 <body ng-app='myApp'>
-    <!-- <nav>
-        <h1>Index Page</h1>
-        <a href="#!/">Home link //</a>
-        <a href="#!/rent">For Rent link // </a>
-        <a href="#!/sale">For Sale link</a>
-    </nav> -->
+    <div class="container">
+        <!-- or:   navbar-light bg-faded -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-md navbar-dark bg-primary">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <header class='navbar'>
-            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <a class="navbar-brand" href="#"></a>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#!/">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#!/rent">For Rent</a>
-                        <a class="nav-item nav-link" href="#!/sale">For Sale</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#!/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#!/rent">For Rent</a>
+                    <a class="nav-item nav-link" href="#!/sale">For Sale</a>
                 </div>
-            </nav>
-    </header>
-    
-
+            </div>
+        </nav>
+    </div>
     <ng-view></ng-view>
-
 </body>
 
 </html>
