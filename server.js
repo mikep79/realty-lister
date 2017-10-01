@@ -13,6 +13,7 @@ app.listen(3000, function(){
 // middleware
 //connect to mongo DB. Why 27017?
 mongoose.connect('mongodb://localhost:27017/realestate');
+
 app.use(express.static('public'));
 app.use(bodyParser.json());
 

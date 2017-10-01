@@ -4,6 +4,12 @@
         <button class='btn' ng-click='SC.getSaleData()'>For Sale</button>
     </div>
     <div class="container">
+        <input ng-model="SC.costIn" type="text" placeholder="Property Cost">
+        <input ng-model="SC.cityIn" type="text" placeholder="City">
+        <input ng-model="SC.sqftIn" type="text" placeholder="Square Footage">
+        <button ng-click="SC.postSaleData()" class="btn">Add New Listing</button>
+    </div>
+    <div class="container">
         <div class="row">
             <div class="color1 col-sm-4"><strong>- Purchase Price -</strong></div>
             <div class="color1 col-sm-4"><strong>- City -</strong></div>

@@ -4,6 +4,12 @@
         <button class='btn' ng-click='RC.getRentData()'>Rentals</button>
     </div>
     <div class="container">
+        <input ng-model="RC.rentIn" type="text" placeholder="Monthly Rent">
+        <input ng-model="RC.cityIn" type="text" placeholder="City">
+        <input ng-model="RC.sqftIn" type="text" placeholder="Square Footage">
+        <button ng-click="RC.postRentData()" class="btn">Add New Listing</button>
+    </div>
+    <div class="container">
         <div class="row">
             <div class="color1 col-sm-4"><strong>- Rent Price -</strong></div>
             <div class="color1 col-sm-4"><strong>- City -</strong></div>

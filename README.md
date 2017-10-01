@@ -15,6 +15,11 @@
 
 - [x] Styling with bootstrap.
 
+Hard mode: add a POST req for rentals and for sales.
+- [x] Post function for new rental.
+- [ ] Post function for new for sale. 
+    - Find way to use two schema.
+
 
 # Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
 

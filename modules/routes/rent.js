@@ -13,4 +13,18 @@ router.get('/', function(req, res){
     });
 });
 
+router.post('/', function(req, res){
+    console.log('req.body: ', req.body);
+    var newListing = new RentalProperties(req.body);
+    console.log('newlisting: ', newListing);
+    newListing.save(function(err){
+        if (err){
+            console.log('newListing POST error: ', err);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(202);
+        }
+    });
+});
+
 module.exports = router;

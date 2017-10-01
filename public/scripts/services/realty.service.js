@@ -15,7 +15,7 @@ myApp.service('RealtyService', function($http){
         }).then(function(res){
             self.rentObj.rentals = res.data;
         });
-    };  // end getRent funct
+    };
 
     self.getSale = function(){
         $http({
@@ -24,5 +24,25 @@ myApp.service('RealtyService', function($http){
         }).then(function(res){
              self.saleObj.sales = res.data;
         });
-    };  // end getSale funct
+    };
+
+    self.postRent = function(newListing){
+        $http({
+            method: 'POST',
+            url: '/getRent',
+            data: newListing
+        }).then(function(res){
+            console.log('Service post res: ', res);
+        });
+    };
+
+    self.postSale = function(newListing){
+        $http({
+            method: 'POST',
+            url: '/getSale',
+            data: newListing
+        }).then(function(res){
+            console.log('Service post res: ', res);
+        });
+    };
 });
