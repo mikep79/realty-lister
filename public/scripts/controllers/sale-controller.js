@@ -17,5 +17,6 @@ myApp.controller('SaleController', ['RealtyService', function (RealtyService) {
         };
         // call service func with newListing as param
         RealtyService.postSale(newListing);
+        vm.getSaleData();
     };
 }]);
