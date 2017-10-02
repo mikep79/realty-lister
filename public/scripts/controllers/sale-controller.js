@@ -15,6 +15,9 @@ myApp.controller('SaleController', ['RealtyService', function (RealtyService) {
             city: vm.cityIn,
             sqft: vm.sqftIn
         };
+        vm.costIn = '';
+        vm.cityIn = '';
+        vm.sqftIn = '';
         // call service func with newListing as param
         RealtyService.postSale(newListing);
         vm.getSaleData();

@@ -15,6 +15,9 @@ myApp.controller('RentController', ['RealtyService', function (RealtyService) {
             city: vm.cityIn,
             sqft: vm.sqftIn
         };
+        vm.rentIn = '';
+        vm.cityIn = '';
+        vm.sqftIn = '';
         // call service func with newListing as param
         RealtyService.postRent(newListing);
         vm.getRentData();
